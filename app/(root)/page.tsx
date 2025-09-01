@@ -19,7 +19,7 @@ function Home() {
                 <TotalBalanceBox 
                   accounts={[]}
                   totalBanks={1}
-                  totalCurrentBalance={1250.35}
+                  totalCurrentBalance={193000}
                 />
             </header>
         </div>

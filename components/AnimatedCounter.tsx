@@ -4,6 +4,7 @@ import CountUp from 'react-countup'
 function AnimatedCounter({amount}:{amount:number}) {
   return (
     <span>
+      
         <CountUp 
         decimal=','
         prefix='$ '
