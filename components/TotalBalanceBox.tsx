@@ -16,7 +16,7 @@ function TotalBalanceBox({accounts , totalBanks , totalCurrentBalance}: TotlaBal
             </h2>
             <div className='flex flex-col gap-2 w-[160px]'>
               <p className='total-balance-label'>Total Curent Balance</p>
-              <div className='total-balance-amount flex-center '>
+              <div className='total-balance-amount flex-start flex-row '>
                 <AnimatedCounter 
                 amount={totalCurrentBalance}
                 />

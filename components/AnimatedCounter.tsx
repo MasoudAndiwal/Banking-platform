@@ -6,9 +6,12 @@ function AnimatedCounter({amount}:{amount:number}) {
     <span>
       
         <CountUp 
-        decimal=','
-        prefix='$ '
-        end={amount}/>
+          end={amount}
+          decimals={2}
+          decimal='.'
+          separator=','
+          prefix='$ '
+        />
     </span>
   )
 }

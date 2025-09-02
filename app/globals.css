@@ -130,7 +130,7 @@
   }
 
   .total-balance-amount {
-    @apply text-24 lg:text-30 flex-1 font-semibold text-gray-900;
+    @apply text-24 lg:text-30 flex-1 font-semibold text-gray-900 w-[900px];
   }
 
   .recent-transactions {
@@ -175,11 +175,11 @@
   }
 
   .profile-name {
-    @apply text-24 font-semibold text-gray-900;
+    @apply text-24 font-semibold text-gray-900 ml-5;
   }
 
   .profile-email {
-    @apply text-16 font-normal text-gray-600;
+    @apply text-16 font-normal text-gray-600 ml-5;
   }
 
   .banks {

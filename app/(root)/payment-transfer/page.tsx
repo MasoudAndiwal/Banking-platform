@@ -2,7 +2,7 @@ import React from 'react'
 
 function page() {
   return (
-    <div>my-banks</div>
+    <div>payment-transfer</div>
   )
 }
 
