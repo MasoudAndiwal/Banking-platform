@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { it } from 'node:test'
 import React from 'react'
 
 function Sidebar({ user }: { user: any }) {
@@ -13,7 +14,7 @@ function Sidebar({ user }: { user: any }) {
         <nav className='flex flex-col gap-4'>
             <Link
             href="/"
-            className='mb-12 cursor-pointer items-center gap-2'
+            className=' flex mb-12 cursor-pointer items-center gap-2'
             >
                 <Image 
                 src="/icons/logo.svg"
@@ -42,11 +43,18 @@ function Sidebar({ user }: { user: any }) {
                             className={cn('brightness-3 invert-0' ,{ 'brightness-0 invert-0' : isActive})}
                             />
                         </div>
+                        <p className={cn('sidebar-label', {
+                            '!text-white': isActive
+                        })}>
+                            {item.label}
+                        </p>
+
                     </Link>
                 );
             })}
+            User
         </nav>
-
+        Footer
     </section>
   )
 }

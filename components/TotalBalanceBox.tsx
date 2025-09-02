@@ -8,7 +8,7 @@ function TotalBalanceBox({accounts , totalBanks , totalCurrentBalance}: TotlaBal
 
   return (
     <section className='total-balance '>
-        <div className='total-balance-chart ml-[86px] '>
+        <div className='total-balance-chart sm:ml-[100px]' >
             <DoughnutChart accounts={accounts}/>
           <div className='flex flex-col gap-6 ml-5 w-40 !important'>
             <h2 className='header-2'>
